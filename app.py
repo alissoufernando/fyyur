@@ -160,7 +160,7 @@ def create_venue_submission():
       state=form.state.data,
       address=form.address.data,
       phone=form.phone.data,
-      genres=",".join(form.genres.data),
+      genres=form.genres.data,
       image_link=form.image_link.data,
       facebook_link=form.facebook_link.data,
       seeking_talent=form.seeking_talent.data,
@@ -352,7 +352,7 @@ def edit_venue_submission(venue_id):
     venue.state=form.state.data
     venue.address=form.address.data
     venue.phone=form.phone.data
-    venue.genres=",".join(form.genres.data)
+    venue.genres=form.genres.data
     venue.image_link=form.image_link.data
     venue.facebook_link=form.facebook_link.data
     venue.seeking_talent= form.seeking_talent.data
@@ -390,7 +390,7 @@ def create_artist_submission():
       city=form.city.data,
       state=form.state.data,
       phone=form.phone.data,
-      genres=",".join(form.genres.data),
+      genres=form.genres.data,
       image_link=form.image_link.data,
       facebook_link=form.facebook_link.data,
       seeking_venue=form.seeking_venue.data,
